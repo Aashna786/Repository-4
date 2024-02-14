@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      .container {
+        border: 2px solid black;
+        height: 750px;
+        width: 520px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(4, 120px);
+        gap: 10px;
+        grid-template-rows: repeat(7, 100px);
+        padding: 20px;
+      }
+       @media screen and (min-width:300px) and (max-width:500px)
+      {
+    .container{
+        background-color: blue;
+    }
+      }
+      @media screen and (min-width:501px) and (max-width:700px)
+      {
+    .container{
+        background-color:coral;
+    }
+      }
+      @media screen and (min-width:701px) and (max-width:900px)
+      {
+    .container{
+        background-color:darkslategray;
+    }
+      }
+      @media screen and (min-width:901px) and (max-width:1200px)
+      {
+    .container{
+        background-color:indigo;
+    }
+      } 
+      .cd1 {
+        grid-column-start: 4;
+      }
+      .cd2 {
+        grid-column: 3/5;
+        background-color: chartreuse;
+      }
+      .cd3 {
+        grid-column: 2/5;
+        background-color: darkmagenta;
+      }
+      .cd4 {
+        grid-column: 1/5;
+        background-color: darkgoldenrod;
+      }
+      .cd5 {
+        grid-column:2/5;
+        background-color: darkred;
+      }
+      .cd6 {
+        grid-column:3/5;
+        background-color: deepskyblue;
+      }
+      .cd7{
+        grid-column:4/5;
+    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div class="cd1"><img src="./f1.jpg" height="100" width="120"></div>
+      <div class="cd2"><img src="./b2.png" height="100" width="120"></div>
+      <div class="cd3"><img src="./n1.jpg" height="100" width="120"></div>
+      <div class="cd4"><img src="./f3.jpg" height="100" width="120"></div>
+      <div class="cd5"><img src="./b1.jpg" height="100" width="120"></div>
+      <div class="cd6"><img src="./f6.jpg" height="100" width="120"></div>
+      <div class="cd7"><img src="./n2.jpg" height="100" width="120"></div>
+      
+    </div>
+  </body>
+</html>
